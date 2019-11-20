@@ -9,7 +9,7 @@ const routes: Routes = [
     component: ImagesComponent,
   },
   {
-    path: 'articles',
+    path: 'articles:language',
     component: ArticlesComponent,
   },
   {
