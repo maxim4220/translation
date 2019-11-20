@@ -10,7 +10,7 @@ export class ArticlesComponent {
 
   languageList = [
     { code: 'en', label: 'English' },
-    { code: 'fr', label: 'French' },
-    { code: 'ru', label: 'Russian' },
+    { code: 'hi', label: 'हिंदी' },
+    { code: 'es', label: 'Espanol' },
   ];
 }
