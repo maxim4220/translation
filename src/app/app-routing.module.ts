@@ -12,10 +12,10 @@ const routes: Routes = [
     path: 'articles',
     component: ArticlesComponent,
   },
-  {
-    //  path: 'articles:language',
-    //  component: ArticlesComponent,
-  },
+  // {
+  //  path: 'articles:language',
+  //  component: ArticlesComponent,
+  // },
   {
     path: '**',
     redirectTo: 'images',
