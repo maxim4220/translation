@@ -81,7 +81,7 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
-              "baseHref": "https://maxim4220.github.io/translation/",
+              "baseHref": "https://maxim4220.github.io/",
               "budgets": [
                 {
                   "type": "initial",
