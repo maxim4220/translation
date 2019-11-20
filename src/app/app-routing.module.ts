@@ -9,6 +9,10 @@ const routes: Routes = [
     component: ImagesComponent,
   },
   {
+    path: 'articles',
+    component: ArticlesComponent,
+  },
+  {
     path: 'articles:language',
     component: ArticlesComponent,
   },
