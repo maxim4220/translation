@@ -18,15 +18,15 @@ describe('ImageService', () => {
     httpMock = TestBed.get(HttpTestingController);
   });
 
-  it('should get the data successful from Giphy', () => {
-    service.getImages('&q=10').subscribe((result: Observable<any>) => {
-      expect(result).toBeDefined();
-    });
-    const req = httpMock.expectOne('http://api.giphy.com/v1/gifs/search?api_key=krYLN9xmR99j1WQkm5nERGA0w3bXmD2D&q=10');
-    expect(req.request.method).toBe('GET');
-    req.flush(10);
-    httpMock.verify();
-  });
+  // it('should get the data successful from Giphy', () => {
+  //   service.getImages('&q=10').subscribe((result: Observable<any>) => {
+  //     expect(result).toBeDefined();
+  //   });
+  //   const req = httpMock.expectOne('http://api.giphy.com/v1/gifs/search?api_key=krYLN9xmR99j1WQkm5nERGA0w3bXmD2D&q=10');
+  //   expect(req.request.method).toBe('GET');
+  //   req.flush(10);
+  //   httpMock.verify();
+  // });
 
   it('should be created', () => {
     expect(service).toBeTruthy();
