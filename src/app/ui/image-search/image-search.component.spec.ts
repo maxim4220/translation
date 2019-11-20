@@ -1,9 +1,12 @@
+import { TranslateService } from './../../images/services/translate.service';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ImageSearchComponent } from './image-search.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterTestingModule } from '@angular/router/testing';
 import { By } from '@angular/platform-browser';
+import { TranslatePipeModule } from '../pipes/translate.pipe.module';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('ImageSearchComponent', () => {
   let component: ImageSearchComponent;
@@ -12,7 +15,8 @@ describe('ImageSearchComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ImageSearchComponent],
-      imports: [FormsModule, ReactiveFormsModule, RouterTestingModule],
+      imports: [FormsModule, ReactiveFormsModule, RouterTestingModule, TranslatePipeModule, HttpClientTestingModule],
+      providers: [TranslateService]
     }).compileComponents();
   }));
 

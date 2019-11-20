@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from './images/services/translate.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test-ultra';
+
+  constructor(public translate: TranslateService, ) {
+  }
+
+  public setLang(lang: string) {
+    this.translate.use(lang);
+  }
 }

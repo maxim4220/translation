@@ -1,15 +1,9 @@
 <form class="mt-4" novalidate (ngSubmit)="performSearch()">
   <div class="input-group">
-    <input
-      [formControl]="search"
-      placeholder="Search..."
-      autocomplete="off"
-      class="form-control"
-      id="search"
-      type="text"
-    />
+    <input [formControl]="search" [placeholder]="'SEARCH' | translate" autocomplete="off" class="form-control"
+      id="search" type="text" />
     <div class="input-group-append">
-      <button id="search-button" class="btn btn-outline-primary" type="submit">Search</button>
+      <button id="search-button" class="btn btn-outline-primary" type="submit">{{'SEARCH' | translate}}</button>
     </div>
   </div>
 </form>

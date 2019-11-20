@@ -10,6 +10,8 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { ImageService } from './services/image.service';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { DebugElement } from '@angular/core';
+import { TranslateService } from './services/translate.service';
+import { TranslatePipeModule } from '../ui/pipes/translate.pipe.module';
 
 describe('ImagesComponent', () => {
   let component: ImagesComponent;
@@ -21,8 +23,8 @@ describe('ImagesComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ImagesComponent, ImageSearchComponent, PaginationComponent, ImageListComponent, SpinnerComponent],
-      imports: [FormsModule, ReactiveFormsModule, RouterTestingModule, HttpClientTestingModule],
-      providers: [ImageService],
+      imports: [FormsModule, ReactiveFormsModule, RouterTestingModule, HttpClientTestingModule, TranslatePipeModule],
+      providers: [ImageService, TranslateService],
     }).compileComponents();
   }));
 
