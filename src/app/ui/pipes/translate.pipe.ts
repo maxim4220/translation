@@ -2,10 +2,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { TranslateService } from '../../images/services/translate.service';
 @Pipe({
   name: 'translate',
-  pure: false
+  pure: false,
 })
 export class TranslatePipe implements PipeTransform {
-  constructor(private translate: TranslateService) { }
+  constructor(private translate: TranslateService) {}
   public transform(key: any): any {
     return this.translate.data[key] || key;
   }

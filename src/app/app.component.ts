@@ -9,8 +9,7 @@ import { TranslateService } from './images/services/translate.service';
 export class AppComponent {
   title = 'test-ultra';
 
-  constructor(public translate: TranslateService, ) {
-  }
+  constructor(public translate: TranslateService) {}
 
   public setLang(lang: string) {
     this.translate.use(lang);

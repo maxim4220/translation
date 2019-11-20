@@ -6,12 +6,10 @@
     <div class="ml-auto">
       <select (change)="setLang($event.target.value)">
         <ng-container *ngFor="let lan of translate.languages">
-          <option [value]="lan">{{lan}}</option>
+          <option [value]="lan">{{ lan }}</option>
         </ng-container>
       </select>
     </div>
-
-
   </nav>
   <router-outlet></router-outlet>
 </div>

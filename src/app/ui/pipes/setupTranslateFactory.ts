@@ -1,4 +1,4 @@
 import { TranslateService } from '../../images/services/translate.service';
-export function setupTranslateFactory(service: TranslateService): Function {
-    return () => service.use('en');
+export function setupTranslateFactory(service: TranslateService): () => void {
+  return () => service.use('en');
 }

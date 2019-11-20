@@ -16,7 +16,7 @@ describe('ImageSearchComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ImageSearchComponent],
       imports: [FormsModule, ReactiveFormsModule, RouterTestingModule, TranslatePipeModule, HttpClientTestingModule],
-      providers: [TranslateService]
+      providers: [TranslateService],
     }).compileComponents();
   }));
 

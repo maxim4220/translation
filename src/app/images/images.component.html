@@ -1,5 +1,5 @@
 <div class="ap-main-container">
-  <h1 id="main-page-title"> {{ 'IMAGE_TITLE' | translate }}! </h1>
+  <h1 id="main-page-title">{{ 'IMAGE_TITLE' | translate }}!</h1>
   <app-image-search (emitSearch)="getSearchOutput($event)"></app-image-search>
   <ng-container *ngIf="showMessage">
     <h3 id="ap-description" class="mt-4">{{ 'SEARCH_MSG' | translate }}</h3>

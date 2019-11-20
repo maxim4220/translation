@@ -8,8 +8,6 @@ import { TranslatePipeModule } from '../ui/pipes/translate.pipe.module';
 @NgModule({
   declarations: [ImagesComponent],
   imports: [CommonModule, UiModule, TranslatePipeModule],
-  providers: [
-    ImageService,
-  ],
+  providers: [ImageService],
 })
-export class ImagesModule { }
+export class ImagesModule {}

@@ -13,7 +13,6 @@ describe('SpinnerComponent', () => {
     TestBed.configureTestingModule({
       declarations: [SpinnerComponent],
       imports: [TranslatePipeModule, HttpClientTestingModule],
-
     }).compileComponents();
   }));
 

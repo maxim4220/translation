@@ -10,7 +10,7 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule, TranslatePipeModule, HttpClientTestingModule],
       declarations: [AppComponent],
-      providers: [TranslateService]
+      providers: [TranslateService],
     }).compileComponents();
   }));
 

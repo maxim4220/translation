@@ -12,4 +12,4 @@ import { TranslatePipeModule } from './pipes/translate.pipe.module';
   imports: [CommonModule, ReactiveFormsModule, FormsModule, TranslatePipeModule],
   exports: [ImageSearchComponent, SpinnerComponent, PaginationComponent, ImageListComponent],
 })
-export class UiModule { }
+export class UiModule {}

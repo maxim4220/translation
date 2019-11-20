@@ -6,10 +6,10 @@ export class TranslateService {
   public languages = ['en', 'fr', 'ru'];
   public data = {};
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   public use(lang: string): Promise<{}> {
-    return new Promise<{}>((resolve) => {
+    return new Promise<{}>(resolve => {
       const langPath = `assets/i18n/${lang || 'en'}.json`;
       this.http.get<{}>(langPath).subscribe(
         translation => {
