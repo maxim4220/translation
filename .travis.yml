@@ -13,6 +13,7 @@ script:
   - npm run-script build
 
 deploy:
+  edge: true
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
