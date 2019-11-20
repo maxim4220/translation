@@ -13,8 +13,8 @@ const routes: Routes = [
     component: ArticlesComponent,
   },
   {
-    path: 'articles:language',
-    component: ArticlesComponent,
+    //  path: 'articles:language',
+    //  component: ArticlesComponent,
   },
   {
     path: '**',
