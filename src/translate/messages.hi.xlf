@@ -9,7 +9,7 @@
    <context context-type="linenumber">1</context>       
     </context-group>      </trans-unit>     
      <trans-unit id="myName" datatype="html">        
-     <source>Hello, My name is Ankit</source>       
+     <source>Hello, My name is Max</source>       
       <target>हेलो, मेरा नाम अंकित है</target>        
       <context-group purpose="location">          
  <context context-type="sourcefile">src/app/articles/articles.component.html</context>
