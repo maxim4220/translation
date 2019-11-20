@@ -47,6 +47,8 @@
             "es": {
               "aot": true,
               "i18nFile": "src/translate/messages.es.xlf",
+              "outputPath": "dist/es/",
+              "baseHref": "/es/",
               "i18nFormat": "xlf",
               "i18nLocale": "es",
               "i18nMissingTranslation": "error"
@@ -54,6 +56,8 @@
             "en": {
               "aot": true,
               "i18nFile": "src/translate/messages.en.xlf",
+              "outputPath": "dist/en/",
+              "baseHref": "/en/",
               "i18nFormat": "xlf",
               "i18nLocale": "en",
               "i18nMissingTranslation": "error"
@@ -61,6 +65,8 @@
             "hi": {
               "aot": true,
               "i18nFile": "src/translate/messages.hi.xlf",
+              "outputPath": "dist/hi/",
+              "baseHref": "/hi/",
               "i18nFormat": "xlf",
               "i18nLocale": "hi",
               "i18nMissingTranslation": "error"
