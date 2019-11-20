@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, LOCALE_ID, Inject } from '@angular/core';
 
 @Component({
   selector: 'app-articles',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./articles.component.sass'],
 })
 export class ArticlesComponent {
+  constructor(@Inject(LOCALE_ID) protected localeId: string) {}
+
   languageList = [
     { code: 'en', label: 'English' },
     { code: 'fr', label: 'French' },
