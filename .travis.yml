@@ -10,10 +10,10 @@ install:
   - npm install
 
 script:
-  - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
-  - ng lint
+#   - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
+#   - ng lint
   - npm run-script build
-  - ng build --prod --i18n-locale es --i18n-format xlf --i18n-file src/translate/messages.es.xlf --output-path=dist/es --baseHref /es/
+#   - ng build --prod --i18n-locale es --i18n-format xlf --i18n-file src/translate/messages.es.xlf --output-path=dist/es --baseHref /es/
   - npm run build-locale
 
 deploy:
