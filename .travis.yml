@@ -21,6 +21,6 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: dist/en
+  local_dir: dist/test-ultra
   on:
     branch: master
